@@ -208,6 +208,7 @@ a:hover {
 
 .myimg {
     width: 30vw;
+    position: absolute;
     border-radius: 20px;
     box-shadow: 0 0 30px #010909;
     transition: all 1s ease;
