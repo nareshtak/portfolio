@@ -1,0 +1,590 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: #030712;
+    font-family: "Lora", serif;
+    letter-spacing: 1px;
+}
+
+/* Color Plate -
+Background Color: #030712
+Surface Color: #0F172A
+Cards: #111827
+Border: rgba(255,255,255,0.08)
+Primary Color: #4F46E5
+Secondary Color: #06B6D4
+Accent: #8B5CF6
+Text: White
+Secondary Text: #94A3B8
+Success Text: #22C55E
+*/
+
+/* Global Classes */
+.primary {
+    color: #4F46E5;
+}
+
+.primary-btn {
+    padding: 8px 20px;
+    background-color: #4F46E5;
+    border-radius: 8px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.primary-btn:hover {
+    color: white;
+    scale: 1.05;
+}
+
+.secondary-btn {
+    font-size: 22px;
+    padding: 8px 20px;
+    border: 1px solid #4F46E5;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0F172A;
+    transition: all 0.4s;
+}
+
+.secondary-btn:hover {
+    color: white;
+    scale: 1.1;
+}
+
+.heading {
+    background-color: #0F172A;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.glassbg {
+    background-color: rgba(255, 255, 255, 0.144);
+}
+
+/* Global Classes Ended.  */
+
+/* Navbar Code Starts Here... */
+nav {
+    display: flex;
+    width: 90vw;
+    height: 8vh;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: "Lora", serif;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    font-size: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    font-family: "Fraunces", serif;
+    transition: all 0.4s;
+}
+
+a:hover {
+    scale: 1.2;
+    color: #4F46E5;
+}
+
+/* Navbar Code Ended. */
+
+/* Main Container Code Starts Here... */
+.main {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+}
+
+.left-main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 5% 0;
+    width: 45vw;
+}
+
+.myname {
+    font-size: 100px;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid black;
+    animation: typing 2.5s steps(40) infinite alternate,
+        blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 10.5ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.skill {
+    font-size: 40px;
+}
+
+.mern {
+    transition: all 0.5s ease;
+}
+
+.mern:hover {
+    scale: 1.2;
+    color: white;
+    background-color: #4F46E5;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 7px white;
+}
+
+.detail {
+    font-size: 20px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+    font-size: 30px;
+}
+
+.social-icons {
+    background-color: #0F172A;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.right-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    position: relative;
+}
+
+.myimg {
+    width: 30vw;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #010909;
+    transition: all 1s ease;
+}
+.myimg:hover {
+    scale: 1.1;
+    box-shadow: 0 0 10px white;
+    z-index: 2;
+}
+.popup{
+    position: absolute;
+    right: 30px;
+    top: 130px;
+    width: 9vw;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #0F172A;
+    background-color: #ffffff11;
+    border-radius: 10px;
+    
+}
+
+/* Main Container Code Ended. */
+
+/* Highlights Code Starts Here... */
+.highlights {
+    background-color: #0F172A;
+    border: 1px solid #4F46E5;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 90vw;
+    margin: auto;
+}
+
+.box {
+    width: 18vw;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 5px;
+}
+
+.highlight-icon {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.highlight-icon1 {
+    background-color: rgb(52, 97, 134);
+    color: rgb(142, 238, 255);
+}
+
+.highlight-icon2 {
+    background-color: rgb(53, 30, 105);
+    color: rgb(115, 105, 255);
+}
+
+.highlight-icon3 {
+    background-color: rgb(39, 78, 39);
+    color: rgb(163, 255, 163);
+}
+
+.highlight-icon4 {
+    background-color: rgb(65, 42, 42);
+    color: rgb(255, 116, 116);
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.upper {
+    font-size: 26px;
+}
+
+/* Highlights Code Ended. */
+
+
+/* About Section Code Starts Here... */
+.about {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: revealUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes revealUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+}
+
+.deskimg {
+    width: 40vw;
+    border-radius: 20px;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 45vw;
+    padding: 10px 30px;
+}
+
+.mainline {
+    font-size: 30px;
+}
+
+tr {
+    margin-top: 20px;
+    transition: all .5s ease;
+}
+
+tr:hover {
+    scale: 1.01;
+}
+
+td {
+    width: fit-content;
+}
+
+/* About Section Code Ended. */
+
+
+/* Skill Section Code Starts Here...  */
+.skill-sec {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: revealUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.skillcards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.skillcard {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #0F172A;
+    border-radius: 20px;
+    border: 1px solid #3a3861;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+/* Skill Section Code Ended. */
+
+
+/* Contact Section Code Starts Here... */
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: revealUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactleft {
+    width: 45vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: #0F172A;
+}
+
+.formdiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.144);
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 43%;
+    font-family: "Fraunces", serif;
+}
+
+::placeholder {
+    color: white;
+    font-family: "Lora", serif;
+}
+
+textarea {
+    height: 50px;
+    width: 94%;
+    background-color: rgba(255, 255, 255, 0.144);
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+button {
+    border: none;
+    color: white;
+    font-family: "Fraunces", serif;
+}
+
+.contactmiddle {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contactbox {
+    display: flex;
+    width: 30vw;
+    gap: 20px;
+}
+
+.contactupper {
+    font-size: 20px;
+}
+
+.contactright {
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+/* Contact Section Code Ended.  */
+
+
+/* Footer Code Starts From Here... */
+.upbutton {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 26px;
+    border: 1px solid #182749;
+    background-color: #03071238;
+    border-radius: 50%;
+    padding: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    animation: upbutton linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0% 30%;
+}
+
+@keyframes upbutton {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px 20px;
+}
+
+.footup{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footleft {
+    width: 25vw;
+}
+
+.footmiddle {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+}
+.spanheading{
+    font-size: 18px;
+}
+
+.footright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #4F46E5;
+    width: 25vw;
+}
+.footbottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+/* Footer Code Ended. */
